@@ -13,15 +13,15 @@ class Value
         value = (pixel.to_HSL[2] * 8).round
         case value
         when 0
-          pixels << pixel_to_rgb(pixel, 255, 0, 0)
+          pixels << pixel_to_rgb(pixel, 0, 0, 0)
         when 1
-          pixels << pixel_to_rgb(pixel, 255, 145, 0)
+          pixels << pixel_to_rgb(pixel, 255, 0, 0)
         when 2
-          pixels << pixel_to_rgb(pixel, 255, 155, 0)
+          pixels << pixel_to_rgb(pixel, 255, 130, 0)
         when 3
-          pixels << pixel_to_rgb(pixel, 0, 255, 0)
+          pixels << pixel_to_rgb(pixel, 255, 255, 0)
         when 4
-          pixels << pixel_to_rgb(pixel, 0, 255, 255)
+          pixels << pixel_to_rgb(pixel, 0, 255, 0)
         when 5
           pixels << pixel_to_rgb(pixel, 0, 0, 255)
         when 6
